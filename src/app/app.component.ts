@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app-demo';
+  constructor(){
+    const { version: appVersion } = require('../../package.json');
+    console.log(appVersion);
+  }
 }
